@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+}
+
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2vmin; /* Adds spacing below the heading */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack the game and buttons vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin; /* Adds spacing between the game and buttons */
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: burlywood;
+    border-radius: 1rem;
+    border: solid 0.5vmin black;
+    box-shadow: 0 0 5px blue; /* Adds a proper shadow effect */
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the text inside the box */
+    cursor: pointer; /* Adds a pointer cursor for better UX */
+}
+
+#rst-btn, #play-again {
+    background-color: burlywood;
+    border-radius: 1rem;
+    border: solid 0.5vmin black;
+    box-shadow: 0 0 5px blue; /* Adds a proper shadow effect */
+    font-size: 2rem;
+    padding: 1vmin 2vmin;
+    margin-top: 1vmin; /* Add spacing above the buttons */
+    cursor: pointer; /* Adds a pointer cursor for buttons */
+}
+
+#msg {
+    color: blanchedalmond;
+    font-size: 5rem;
+    margin-bottom: 1vmin; /* Add spacing below the message */
+}
+
+.msg-container {
+    height: auto; /* Adjust height to fit content */
+    display: flex;
+    flex-direction: column; /* Stack the message and buttons vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin; /* Add spacing between the message and buttons */
+}
+
+.hide {
+    display: none;
+}
